@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch40"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RamenWatchTimer_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="준비물: 라면 1개, 계란 1개" id="kdQ-S9-tQc"/>
+                        <label width="136" alignment="left" text="머그컵 한컵 가득 물을 넣고 끓여주세요" numberOfLines="2" id="z9K-hm-pTL"/>
+                        <label alignment="left" text="물이 끓으면 START 버튼을 눌러주세요" numberOfLines="2" id="P8u-5c-R6D"/>
+                        <button width="1" alignment="left" title="START" id="zZD-TE-zJm">
+                            <color key="backgroundColor" red="0.94577568769999998" green="0.45209741590000002" blue="0.38230520489999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="glh-GT-6v5" kind="push" id="fLg-l8-82K"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="219.52173913043478" y="344.55357142857144"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="xmQ-05-bCl">
+            <objects>
+                <controller id="glh-GT-6v5">
+                    <items>
+                        <label height="41" alignment="left" text="면과 건더기스프를 넣어주세요" numberOfLines="2" id="92n-dX-KCw"/>
+                        <label height="31" alignment="left" text="불은 중불로 낮춰주세요" id="crQ-Lg-21K"/>
+                        <label alignment="left" text="다 하셨으면 NEXT 버튼을 눌러주세요!" numberOfLines="2" id="PUa-KG-BYf"/>
+                        <button width="1" alignment="left" title="NEXT" id="E9T-bX-4zT">
+                            <color key="backgroundColor" red="0.94577568769999998" green="0.45209741590000002" blue="0.38230520489999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="u29-Og-LJm" kind="push" id="dV3-Bs-a4K"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="408" y="343.79464285714289"/>
+        </scene>
+        <!--Interface Controller3-->
+        <scene sceneID="fNG-za-Vh8">
+            <objects>
+                <controller id="u29-Og-LJm" customClass="InterfaceController3" customModule="RamenWatchTimer_WatchKit_Extension">
+                    <items>
+                        <timer alignment="left" previewedSeconds="60" id="blZ-0I-5qx">
+                            <color key="textColor" red="1" green="0.95881346180000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <calendarUnit key="units" minute="YES" second="YES"/>
+                        </timer>
+                        <label alignment="left" text="1분동안 면을 젓가락으로 풀어주세요" numberOfLines="2" id="IN2-kM-Pda"/>
+                        <label alignment="left" text="면을 풀었다면 라면스프 절반만 넣어 섞어주세요" numberOfLines="2" id="J8h-8x-shJ"/>
+                        <button width="1" alignment="left" title="NEXT" id="3ZB-16-tgL">
+                            <color key="backgroundColor" red="0.94577568769999998" green="0.45209741590000002" blue="0.38230520489999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="QJN-8K-vhC" kind="push" id="8JR-EO-bv0"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="nextButton" destination="3ZB-16-tgL" id="PWd-Wp-At5"/>
+                        <outlet property="timer" destination="blZ-0I-5qx" id="Px2-RF-G42"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="600" y="345"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="EoT-Pl-Tfv">
+            <objects>
+                <controller id="QJN-8K-vhC">
+                    <items>
+                        <label alignment="left" text="가운데에 공간을 만들어 계란을 넣어주세요" numberOfLines="2" id="Ims-CQ-QiA"/>
+                        <button width="1" alignment="left" title="NEXT" id="56e-UU-NzH">
+                            <color key="backgroundColor" red="0.94577568769999998" green="0.45209741590000002" blue="0.38230520489999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="PAx-qD-TaB" kind="push" id="aVL-g2-wPF"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="788" y="345"/>
+        </scene>
+        <!--Interface Controller5-->
+        <scene sceneID="jMn-qR-egr">
+            <objects>
+                <controller id="PAx-qD-TaB" customClass="InterfaceController5" customModule="RamenWatchTimer_WatchKit_Extension">
+                    <items>
+                        <label height="20" alignment="left" text="불은 약불로 낮춰주세요" id="aiw-lq-hDK"/>
+                        <label height="20" alignment="left" text="뚜껑을 덮어주세요" id="GVz-F6-drM"/>
+                        <label alignment="left" text="1분간 기다립니다!" id="iu8-m5-546"/>
+                        <timer alignment="left" previewedSeconds="60" id="M7q-jL-tFf">
+                            <color key="textColor" red="1" green="0.95881346180000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <calendarUnit key="units" minute="YES" second="YES"/>
+                        </timer>
+                        <button width="1" alignment="left" title="FINISH!" id="Li6-aI-bzQ">
+                            <color key="backgroundColor" red="0.94577568769999998" green="0.45209741590000002" blue="0.38230520489999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="EEe-yO-q8B" kind="push" id="7P9-lN-pb7"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="nextButton" destination="Li6-aI-bzQ" id="rpZ-Hx-ah2"/>
+                        <outlet property="timer" destination="M7q-jL-tFf" id="omi-98-84S"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="977.86956521739125" y="344.55357142857144"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Fdt-ER-dDZ">
+            <objects>
+                <controller id="EEe-yO-q8B">
+                    <items>
+                        <label width="136" alignment="left" text="맛있게 드세요!" textAlignment="left" id="c3e-ow-znA"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1168.5652173913043" y="344.55357142857144"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="RamenWatchTimer_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="RamenWatchTimer_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="710" y="643"/>
+        </scene>
+    </scenes>
+</document>

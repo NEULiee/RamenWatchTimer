@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D89C68392699ABC50024F5BD /* RamenWatchTimer WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D89C68382699ABC50024F5BD /* RamenWatchTimer WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D89C683F2699ABC50024F5BD /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89C683D2699ABC50024F5BD /* Interface.storyboard */; };
+		D89C68412699ABC60024F5BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D89C68402699ABC60024F5BD /* Assets.xcassets */; };
+		D89C68482699ABC60024F5BD /* RamenWatchTimer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D89C68472699ABC60024F5BD /* RamenWatchTimer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D89C684D2699ABC60024F5BD /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89C684C2699ABC60024F5BD /* InterfaceController.swift */; };
+		D89C684F2699ABC60024F5BD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89C684E2699ABC60024F5BD /* ExtensionDelegate.swift */; };
+		D89C68512699ABC60024F5BD /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89C68502699ABC60024F5BD /* NotificationController.swift */; };
+		D89C68532699ABC60024F5BD /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89C68522699ABC60024F5BD /* ComplicationController.swift */; };
+		D89C68552699ABC70024F5BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D89C68542699ABC70024F5BD /* Assets.xcassets */; };
+		D89C68662699ADBF0024F5BD /* InterfaceController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89C68652699ADBF0024F5BD /* InterfaceController3.swift */; };
+		D89C68682699ADD10024F5BD /* InterfaceController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89C68672699ADD10024F5BD /* InterfaceController5.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D89C683A2699ABC50024F5BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D89C682E2699ABC50024F5BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D89C68372699ABC50024F5BD;
+			remoteInfo = "RamenWatchTimer WatchKit App";
+		};
+		D89C68492699ABC60024F5BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D89C682E2699ABC50024F5BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D89C68462699ABC60024F5BD;
+			remoteInfo = "RamenWatchTimer WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D89C685D2699ABC70024F5BD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D89C68482699ABC60024F5BD /* RamenWatchTimer WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89C68612699ABC70024F5BD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D89C68392699ABC50024F5BD /* RamenWatchTimer WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D89C68342699ABC50024F5BD /* RamenWatchTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RamenWatchTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89C68382699ABC50024F5BD /* RamenWatchTimer WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RamenWatchTimer WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89C683E2699ABC50024F5BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D89C68402699ABC60024F5BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D89C68422699ABC60024F5BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D89C68472699ABC60024F5BD /* RamenWatchTimer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RamenWatchTimer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89C684C2699ABC60024F5BD /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D89C684E2699ABC60024F5BD /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D89C68502699ABC60024F5BD /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D89C68522699ABC60024F5BD /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		D89C68542699ABC70024F5BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D89C68562699ABC70024F5BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D89C68572699ABC70024F5BD /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D89C68652699ADBF0024F5BD /* InterfaceController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController3.swift; sourceTree = "<group>"; };
+		D89C68672699ADD10024F5BD /* InterfaceController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController5.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D89C68442699ABC60024F5BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D89C682D2699ABC50024F5BD = {
+			isa = PBXGroup;
+			children = (
+				D89C683C2699ABC50024F5BD /* RamenWatchTimer WatchKit App */,
+				D89C684B2699ABC60024F5BD /* RamenWatchTimer WatchKit Extension */,
+				D89C68352699ABC50024F5BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D89C68352699ABC50024F5BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D89C68342699ABC50024F5BD /* RamenWatchTimer.app */,
+				D89C68382699ABC50024F5BD /* RamenWatchTimer WatchKit App.app */,
+				D89C68472699ABC60024F5BD /* RamenWatchTimer WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D89C683C2699ABC50024F5BD /* RamenWatchTimer WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D89C683D2699ABC50024F5BD /* Interface.storyboard */,
+				D89C68402699ABC60024F5BD /* Assets.xcassets */,
+				D89C68422699ABC60024F5BD /* Info.plist */,
+			);
+			path = "RamenWatchTimer WatchKit App";
+			sourceTree = "<group>";
+		};
+		D89C684B2699ABC60024F5BD /* RamenWatchTimer WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D89C684C2699ABC60024F5BD /* InterfaceController.swift */,
+				D89C68652699ADBF0024F5BD /* InterfaceController3.swift */,
+				D89C68672699ADD10024F5BD /* InterfaceController5.swift */,
+				D89C684E2699ABC60024F5BD /* ExtensionDelegate.swift */,
+				D89C68502699ABC60024F5BD /* NotificationController.swift */,
+				D89C68522699ABC60024F5BD /* ComplicationController.swift */,
+				D89C68542699ABC70024F5BD /* Assets.xcassets */,
+				D89C68562699ABC70024F5BD /* Info.plist */,
+				D89C68572699ABC70024F5BD /* PushNotificationPayload.apns */,
+			);
+			path = "RamenWatchTimer WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D89C68332699ABC50024F5BD /* RamenWatchTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D89C68622699ABC70024F5BD /* Build configuration list for PBXNativeTarget "RamenWatchTimer" */;
+			buildPhases = (
+				D89C68322699ABC50024F5BD /* Resources */,
+				D89C68612699ABC70024F5BD /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D89C683B2699ABC50024F5BD /* PBXTargetDependency */,
+			);
+			name = RamenWatchTimer;
+			productName = RamenWatchTimer;
+			productReference = D89C68342699ABC50024F5BD /* RamenWatchTimer.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		D89C68372699ABC50024F5BD /* RamenWatchTimer WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D89C685E2699ABC70024F5BD /* Build configuration list for PBXNativeTarget "RamenWatchTimer WatchKit App" */;
+			buildPhases = (
+				D89C68362699ABC50024F5BD /* Resources */,
+				D89C685D2699ABC70024F5BD /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D89C684A2699ABC60024F5BD /* PBXTargetDependency */,
+			);
+			name = "RamenWatchTimer WatchKit App";
+			productName = "RamenWatchTimer WatchKit App";
+			productReference = D89C68382699ABC50024F5BD /* RamenWatchTimer WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D89C68462699ABC60024F5BD /* RamenWatchTimer WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D89C685A2699ABC70024F5BD /* Build configuration list for PBXNativeTarget "RamenWatchTimer WatchKit Extension" */;
+			buildPhases = (
+				D89C68432699ABC60024F5BD /* Sources */,
+				D89C68442699ABC60024F5BD /* Frameworks */,
+				D89C68452699ABC60024F5BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RamenWatchTimer WatchKit Extension";
+			productName = "RamenWatchTimer WatchKit Extension";
+			productReference = D89C68472699ABC60024F5BD /* RamenWatchTimer WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D89C682E2699ABC50024F5BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D89C68332699ABC50024F5BD = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					D89C68372699ABC50024F5BD = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					D89C68462699ABC60024F5BD = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = D89C68312699ABC50024F5BD /* Build configuration list for PBXProject "RamenWatchTimer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D89C682D2699ABC50024F5BD;
+			productRefGroup = D89C68352699ABC50024F5BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D89C68332699ABC50024F5BD /* RamenWatchTimer */,
+				D89C68372699ABC50024F5BD /* RamenWatchTimer WatchKit App */,
+				D89C68462699ABC60024F5BD /* RamenWatchTimer WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D89C68322699ABC50024F5BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89C68362699ABC50024F5BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89C68412699ABC60024F5BD /* Assets.xcassets in Resources */,
+				D89C683F2699ABC50024F5BD /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89C68452699ABC60024F5BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89C68552699ABC70024F5BD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D89C68432699ABC60024F5BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89C68662699ADBF0024F5BD /* InterfaceController3.swift in Sources */,
+				D89C68512699ABC60024F5BD /* NotificationController.swift in Sources */,
+				D89C68532699ABC60024F5BD /* ComplicationController.swift in Sources */,
+				D89C684F2699ABC60024F5BD /* ExtensionDelegate.swift in Sources */,
+				D89C684D2699ABC60024F5BD /* InterfaceController.swift in Sources */,
+				D89C68682699ADD10024F5BD /* InterfaceController5.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D89C683B2699ABC50024F5BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D89C68372699ABC50024F5BD /* RamenWatchTimer WatchKit App */;
+			targetProxy = D89C683A2699ABC50024F5BD /* PBXContainerItemProxy */;
+		};
+		D89C684A2699ABC60024F5BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D89C68462699ABC60024F5BD /* RamenWatchTimer WatchKit Extension */;
+			targetProxy = D89C68492699ABC60024F5BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D89C683D2699ABC50024F5BD /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D89C683E2699ABC50024F5BD /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D89C68582699ABC70024F5BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D89C68592699ABC70024F5BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D89C685B2699ABC70024F5BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SLD3XB8ML6;
+				INFOPLIST_FILE = "RamenWatchTimer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuli.RamenWatchTimer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		D89C685C2699ABC70024F5BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SLD3XB8ML6;
+				INFOPLIST_FILE = "RamenWatchTimer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuli.RamenWatchTimer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		D89C685F2699ABC70024F5BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SLD3XB8ML6;
+				IBSC_MODULE = RamenWatchTimer_WatchKit_Extension;
+				INFOPLIST_FILE = "RamenWatchTimer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuli.RamenWatchTimer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		D89C68602699ABC70024F5BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SLD3XB8ML6;
+				IBSC_MODULE = RamenWatchTimer_WatchKit_Extension;
+				INFOPLIST_FILE = "RamenWatchTimer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuli.RamenWatchTimer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		D89C68632699ABC70024F5BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SLD3XB8ML6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuli.RamenWatchTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D89C68642699ABC70024F5BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SLD3XB8ML6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuli.RamenWatchTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D89C68312699ABC50024F5BD /* Build configuration list for PBXProject "RamenWatchTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D89C68582699ABC70024F5BD /* Debug */,
+				D89C68592699ABC70024F5BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D89C685A2699ABC70024F5BD /* Build configuration list for PBXNativeTarget "RamenWatchTimer WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D89C685B2699ABC70024F5BD /* Debug */,
+				D89C685C2699ABC70024F5BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D89C685E2699ABC70024F5BD /* Build configuration list for PBXNativeTarget "RamenWatchTimer WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D89C685F2699ABC70024F5BD /* Debug */,
+				D89C68602699ABC70024F5BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D89C68622699ABC70024F5BD /* Build configuration list for PBXNativeTarget "RamenWatchTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D89C68632699ABC70024F5BD /* Debug */,
+				D89C68642699ABC70024F5BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D89C682E2699ABC50024F5BD /* Project object */;
+}
